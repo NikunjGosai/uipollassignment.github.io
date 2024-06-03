@@ -1,0 +1,165 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #d9d9d9;
+    margin: 0 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+.poll-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.poll-inner-wrap {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.vote-heading, .question-heading, .result-heading {
+    color: #0e1a4a;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+
+.question-heading, .result-heading {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label, .result-option {
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 10px 0;
+}
+
+.result-option {
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #e5e542;
+    color: #0e1a4a;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    padding: 20px 60px;
+    cursor: pointer;
+    transition: all .5s;
+    text-transform: uppercase;
+}
+
+button:hover, button:disabled:hover {
+    background-color: #0e1a4a;
+    color: #e5e542;
+}
+
+button:disabled{
+    background-color: #e5e542;
+}
+
+.results-1, .results-2 {
+    display: inline-block;
+    width: 49%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .poll-wrapper {
+        padding: 15px 0;
+    }
+
+    .poll-inner-wrap {
+        padding: 15px;
+    }
+
+    .vote-heading {
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 15px;
+    }
+
+    .question-heading, .result-heading {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+
+    label, .result-option {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    button {
+        font-size: 18px;
+        border-radius: 30px;
+        padding: 15px 50px;
+    }
+}
+
+@media only screen and (max-width: 599px) { 
+
+    .vote-heading {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+
+    .question-heading, .result-heading {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+
+    label, .result-option {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    button {
+        font-size: 16px;
+        border-radius: 20px;
+        padding: 10px 40px;
+    }
+
+    .results-1, .results-2 {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    label {
+        display: block;
+    }
+
+    form, .question {
+        margin-bottom: 15px;
+    }
+}

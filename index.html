@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Widget</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="poll-wrapper">
+        <div class="container">
+            <div class="poll-inner-wrap">
+                <h1 class="vote-heading">Please Vote for your options:</h1>
+                <form id="voteForm">
+                    <div class="question">
+                        <h2 class="question-heading">What is your favourite language?</h2>
+                        <label>
+                            <input type="radio" name="question1" value="HTML">
+                            HTML
+                        </label>
+                        <label>
+                            <input type="radio" name="question1" value="CSS">
+                            CSS
+                        </label>
+                        <label>
+                            <input type="radio" name="question1" value="JAVASCRIPT">
+                            JAVASCRIPT
+                        </label>
+                    </div>
+                    <div class="question">
+                        <h2 class="question-heading">What is your favourite sport?</h2>
+                        <label>
+                            <input type="radio" name="question2" value="CRICKET">
+                            CRICKET
+                        </label>
+                        <label>
+                            <input type="radio" name="question2" value="FOOTBALL">
+                            FOOTBALL
+                        </label>
+                        <label>
+                            <input type="radio" name="question2" value="HOCKEY">
+                            HOCKEY
+                        </label>
+                    </div>
+                    <button type="submit">Vote</button>
+                </form>
+                <div id="results">
+                    <h2 class="result-heading">Results:</h2>
+                    <div id="results1" class="results-1">
+                        <h3 class="question-heading">Question 1</h3>
+                        <p id="question1-option1" class="result-option">HTML : <span>0</span> votes</p>
+                        <p id="question1-option2" class="result-option">CSS : <span>0</span> votes</p>
+                        <p id="question1-option3" class="result-option">JAVASCRIPT : <span>0</span> votes</p>
+                    </div>
+                    <div id="results2" class="results-2">
+                        <h3 class="question-heading">Question 2</h3>
+                        <p id="question2-option1" class="result-option">CRICKET : <span>0</span> votes</p>
+                        <p id="question2-option2" class="result-option">FOOTBALL : <span>0</span> votes</p>
+                        <p id="question2-option3" class="result-option">HOCKEY : <span>0</span> votes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
